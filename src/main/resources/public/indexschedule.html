@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  /*background-color: blue*/;
+  background-image: url(https://www.churchmotiongraphics.com/wp-content/uploads/2016/06/Under-The-Sea.jpg);
+}
+
+#earth {
+  width: 150px;
+  height: 150px;
+  background: url(http://flatplanet.sourceforge.net/maps/images/earthmap_hires.jpg);
+  border-radius: 50%;
+  background-size: 320px;
+  box-shadow: inset 16px 0 40px 6px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+#sonar {
+  width: 320px;
+  height: 320px;
+  background: url(http://4.bp.blogspot.com/-zwuXI3k9LNI/Ti1GlX6G23I/AAAAAAAACks/2gk61gRcZQE/s1600/Radar+screen.gif);
+  border-radius: 50%;
+  background-size: 320px;
+  box-shadow: inset 16px 0 40px 6px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+  /*animation-name: rotate;*/
+  /*animation-duration: 4s;*/
+  /*animation-iteration-count: infinite;*/
+  /*animation-timing-function: linear;*/
+}
+@keyframes rotate {
+  from { background-position-x: 0px; }
+  to { background-position-x: 320px; }
+}
+
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: yellow;
+}
+
+
+</style>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+<br><center><div id="earth"></div>
+
+<font face="Comic Sans MS" color= yellow><h1><center>! Welcome ! </h1>
+<h1><center>~ To   Battle   Ship  ~</h1>
+<h2><center><i> By : Brent  ,  Dennie  ,  Jonathan  ,  Kenny</i></h2>
+
+<form action="action_page.php">
+
+  <div class="container">
+        
+    <button type><a class = "prev" href="index.html" ><h3>!Game Start!</h3></button></a></button>
+    <button type><a class = "prev" href="rules.html"><h3>~Rules~</h3></button></a>
+
+
+  </div>
+   <br><div class="container" style="background-color:#f1f1f1">
+  </div>
+</form>
+<br>
+<br><center><div id="sonar"></div></center>
+<!-- <img src ="http://4.bp.blogspot.com/-zwuXI3k9LNI/Ti1GlX6G23I/AAAAAAAACks/2gk61gRcZQE/s1600/Radar+screen.gif" style="width:200px; height: 200px"></center> -->
+</body>
+</html> 
