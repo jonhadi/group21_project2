@@ -37,8 +37,50 @@ function click_control(cel,row,col) {
 }
 </script>
 
-
 <body>
+<h1>Place Ships</h1>
+<div id="AircraftcarrierDiv">
+    Ship:
+    <select name="shipSelec" id="shipSelec">
+        <option value="aircraftCarrier">Aircraft Carrier</option>
+        <option value="battleship">Battleship</option>
+        <option value="cruiser">Cruiser</option>
+        <option value="destroyer">Destroyer</option>
+        <option value="submarine">Submarine</option>
+    </select>
+    Row:
+    <select name="rowSelec" id="rowSelec">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    Column:
+    <select name="colSelec" id="colSelec">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    Orientation:
+    <select name="orientationSelec" id="orientationSelec">
+        <option value="horizontal">horizontal</option>
+        <option value="vertical">vertical</option>
+    </select>
+    <button type="button" onclick="placeShip()">Place</button>
+</div>
 
 <section id="todoapp" ic-target="this">
     <!--#parse("/velocity/todoList.vm")-->
@@ -46,6 +88,7 @@ function click_control(cel,row,col) {
     <div id="MyBoard" class="gameBoard">
         <table>
             <tr id="My_Row_1">
+
                 <td id="1_1"  class="{{1_1}} loc" onclick="click_control(this,1,1)"></td>
                 <td id="1_2"  class="{{1_2}} loc" onclick="click_control(this,1,2)"></td>
                 <td id="1_3"  class="{{1_3}} loc" onclick="click_control(this,1,3)"></td>
@@ -164,11 +207,11 @@ function click_control(cel,row,col) {
                 <td id="10_8" class="{{7_8}} loc" onclick="click_control(this,10,8)"></td>
                 <td id="10_9" class="{{7_9}} loc" onclick="click_control(this,10,9)"></td>
                 <td id="10_10" class="{{7_10}} loc" onclick="click_control(this,10,10)"></td>
+
             </tr>
         </table>
     </div>
     <BR><BR><BR>
-
 
     <div id="AircraftcarrierDiv">
         Row:
@@ -199,8 +242,6 @@ function click_control(cel,row,col) {
         </select>
         <button type="button" onclick="fire()">Fire</button>
     </div>
-
-
 
 </section>
 </body>
