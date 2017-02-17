@@ -20,7 +20,7 @@ function click_control(cel,row,col) {
   oldColor = cel.style.backgroundColor;
   cel.style.backgroundColor = 'yellow';
   $( "#dialog-confirm" ).dialog({
-      dialogClass: "no-close",
+      dialogClass: "pop-up",
       resizable: false,
       height: 100,
       width: 100,
@@ -173,7 +173,7 @@ function click_control(cel,row,col) {
 
     <h1>Fire:</h1>
 
-    <div id="AircraftcarrierDiv">
+    <div id="AircraftcarrierDiv" style="display: none;">
         Row:
         <select name="rowFire" id="rowFire">
             <option value="1">1</option>
