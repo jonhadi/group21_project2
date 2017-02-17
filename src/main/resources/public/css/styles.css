@@ -4,10 +4,27 @@ body {
     padding: 0;
 }
 
+.shipLayout {
+float: left;
+padding: 10px;
+}
+
+.pop-up {
+    background-color: orange;
+    max-height: 100px,
+    max-width: 50px,
+}
+
+.pop-up .ui-dialog-titlebar-close {
+  display: none;
+}
+
 .gameBoard{
 /*with:100px;
 height:100px;*/
 background-color: light-gray;
+float: left;
+padding: 10px;
 }
 
 .gameBoard td {
