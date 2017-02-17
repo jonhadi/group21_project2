@@ -24,11 +24,18 @@
                 "Place": function(){
                     document.getElementById("rowSelec").value = row;
                     document.getElementById("colSelec").value = col;
-                    placeShip()},
+                    placeShip();
+                    $( this ).dialog( "close" )},
                 "Fire": function(){
                     document.getElementById("colFire").value = row;
                     document.getElementById("rowFire").value = col;
-                    fire()},
+                    fire();
+                    $( this ).dialog( "close" )},
+                "Scan": function(){
+                    document.getElementById("colScan").value = row;
+                    document.getElementById("rowScan").value = col;
+                    scan();
+                    $( this ).dialog( "close" )},
                 "No!": function(){
                     cel.style.backgroundColor = oldColor,
                         $( this ).dialog( "close" );
