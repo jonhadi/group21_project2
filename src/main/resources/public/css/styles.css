@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
 .gameBoard{
 /*with:100px;
 height:100px;*/

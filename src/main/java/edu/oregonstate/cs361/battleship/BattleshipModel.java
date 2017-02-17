@@ -25,10 +25,9 @@ public class BattleshipModel {
     private ArrayList<Coordinate> playerMisses;
     ArrayList<Coordinate> computerHits;
     private ArrayList<Coordinate> computerMisses;
+    private int shipCount = 0;
 
     boolean scanResult = false;
-
-
 
     public BattleshipModel() {
         playerHits = new ArrayList<>();
@@ -156,5 +155,12 @@ public class BattleshipModel {
 
     public boolean getScanResult() {
         return scanResult;
+    }
+
+    public void setShipCount(int num) { shipCount = num; }
+
+    public int getShipCount() {
+//        console.log(shipCount);
+        return shipCount;
     }
 }
