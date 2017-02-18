@@ -1,4 +1,5 @@
 var gameModel;
+var scanned = false;
 
 $( document ).ready(function() {
   // Handler for .ready() called.
@@ -49,6 +50,8 @@ function fire(){
      dataType: "json"
    });
 
+   scanned = false;
+
    request.done(function( currModel ) {
      displayGameState(currModel);
      gameModel = currModel;
@@ -73,6 +76,8 @@ function scan(){
      dataType: "json"
    });
 
+   scanned = true;
+
    request.done(function( currModel ) {
      displayGameState(currModel);
      gameModel = currModel;
@@ -94,10 +99,14 @@ function displayGameState(gameModel){
 $( '#MyBoard td'  ).css("background-color", "blue");
 $( '#TheirBoard td'  ).css("background-color", "blue");
 
-if(gameModel.scanResult){
-alert("Scan found at least one Ship")}
-else{
-alert("Scan found no Ships")}
+if (scanned){
+    if (gameModel.scanResult) {
+        alert("Scan found at least one Ship")
+    }
+    else {
+        alert("Scan found no Ships")
+    }
+}
 
 displayShip(gameModel.aircraftCarrier);
 displayShip(gameModel.battleship);
